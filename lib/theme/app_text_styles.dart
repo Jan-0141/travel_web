@@ -17,4 +17,8 @@ class AppTextStyles {
     fontSize: 12,
     color: AppColors.textSecondary,
   );
+    static const alertbody = TextStyle(
+    fontSize: 12,
+    color: AppColors.alert,
+  );
 }

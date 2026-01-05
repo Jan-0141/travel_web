@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_web/theme/app_theme.dart';
 
 import '../../../theme/app_colors.dart';
+import '../../../theme/app_text_styles.dart';
 import '../../../widget/buttom_widget.dart';
 import '../../../widget/buttom_with_image_widget.dart';
 import '../../../widget/textfile.dart';
@@ -56,7 +57,7 @@ class RightCreateUserWidget extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text('login',style: Theme.of(context).textTheme.bodySmall!.copyWith(decoration: TextDecoration.underline,),),
+                child: Text('login',style: AppTextStyles.alertbody.copyWith(decoration: TextDecoration.underline, color: AppColors.alert,),),
               ),
             ],
           ),
