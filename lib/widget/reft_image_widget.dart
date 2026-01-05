@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class LeftLoginWidget extends StatelessWidget {
+class LeftImageWidget extends StatelessWidget {
   final String? imagePath;
   final double? height;
   final double? width;
-  const LeftLoginWidget({super.key, this.imagePath, this.height, this.width});
+  const LeftImageWidget({super.key, this.imagePath, this.height, this.width});
 
   @override
   Widget build(BuildContext context) {

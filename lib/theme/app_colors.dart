@@ -12,4 +12,6 @@ class AppColors {
   static const error = Color(0xFFD32F2F);
 
   static const buttonThemeColor = Color.fromRGBO(249, 231, 50, 100);
+  static const buttonSecondary = Colors.white;
+  static const buttonBorderColor = Color(0xFF212121);
 }

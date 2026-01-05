@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:travel_web/theme/app_theme.dart';
 
-import '../../theme/app_colors.dart';
-import '../../widget/buttom_widget.dart';
-import '../../widget/textfile.dart';
+import '../../../app_routes.dart';
+import '../../create_user/create_user_page.dart';
+import '../../../theme/app_colors.dart';
+import '../../../widget/buttom_widget.dart';
+import '../../../widget/textfile.dart';
 
 class RightLoginWidget extends StatelessWidget {
   final double? height;
@@ -51,9 +53,10 @@ class RightLoginWidget extends StatelessWidget {
               ),
               SizedBox(width: 50),
               TextButton(
-                onPressed: () {
-                  // Handle forgot password action
-                },
+                onPressed: () =>  Navigator.pushNamed(context, AppRoutes.createuser),//CreteUserPage(),
+                // {
+                //   CreteUserPage();
+                // },
                 child: Text('Create Account',style: Theme.of(context).textTheme.bodySmall!.copyWith(decoration: TextDecoration.underline,),),
               ),
             ],

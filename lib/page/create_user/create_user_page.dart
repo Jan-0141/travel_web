@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
-import 'widget/left_login_widget.dart';
-import 'widget/right_login_widget.dart';
+import '../../widget/reft_image_widget.dart';
+import 'widget/right_create_user.dart';
 
 
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+
+
+class CreteUserPage extends StatefulWidget {
+  const CreteUserPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<CreteUserPage> createState() => _CreteUserPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _CreteUserPageState extends State<CreteUserPage> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -21,12 +23,12 @@ class _LoginPageState extends State<LoginPage> {
       alignment: Alignment.centerLeft,
       child: Row(
         children:  [
-          LeftLoginWidget(
+          LeftImageWidget(
             width: width * 0.5,
             height: height,
             imagePath: 'asset/images/login_left.png',
           ),
-          RightLoginWidget(
+          RightCreateUserWidget(
             width: width * 0.5,
             height: height,          ),
         ],
